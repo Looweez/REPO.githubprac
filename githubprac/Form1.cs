@@ -23,7 +23,7 @@ namespace githubprac
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (txtPlayerName.Text != "")
+            if (txtPlayerName.Text != "" && txtDragonName.Text != "")
 
             {
 
@@ -33,6 +33,10 @@ namespace githubprac
                 rtbLog.Text = "Player Name: " + playerName +
                               "\nDragon Name: " + dragonName;
 
+            }
+            else
+            {
+                rtbLog.Text = "You must enter a player name and a dragon name.";
             }
         }
     }
