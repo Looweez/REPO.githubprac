@@ -17,17 +17,23 @@ namespace githubprac
 
         public frmDwagon()
         {
-        //comment from github
+            //comment from github
             InitializeComponent();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            playerName = txtPlayerName.Text;
-            dragonName = txtDragonName.Text;
+            if (txtPlayerName.Text != "")
 
-            rtbLog.Text = "Player Name: " + playerName +
-                          "\nDragon Name: " + dragonName;
+            {
+
+                playerName = txtPlayerName.Text;
+                dragonName = txtDragonName.Text;
+
+                rtbLog.Text = "Player Name: " + playerName +
+                              "\nDragon Name: " + dragonName;
+
+            }
         }
     }
 }
