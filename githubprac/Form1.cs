@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace githubprac
 {
-    public partial class Form1 : Form
+    public partial class frmDwagon : Form
     {
-        public Form1()
+        public frmDwagon()
         {
             InitializeComponent();
         }
