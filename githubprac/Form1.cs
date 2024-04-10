@@ -12,9 +12,21 @@ namespace githubprac
 {
     public partial class frmDwagon : Form
     {
+        string playerName;
+        string dragonName;
+
         public frmDwagon()
         {
             InitializeComponent();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            playerName = txtPlayerName.Text;
+            dragonName = txtDragonName.Text;
+
+            rtbLog.Text = "Player Name: " + playerName +
+                          "\nDragon Name: " + dragonName;
         }
     }
 }
